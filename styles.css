@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+    justify-self: start;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.name {
+    text-align: center;
+    margin-right: 10rem;
+}
+
+.name h1 {
+    font-size: 3rem;
+}
+.name h3 {
+    font-size: 1.5rem;
+    color: bisque;
+}
+#body{
+    background: #ff7f50;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+#link{
+    background-image: linear-gradient(rgba(1, 41, 41, 0.9),rgba(0, 128, 128, .9)),url(school.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#link h2{
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+
+}
+.lk{
+    background: orangered;
+    margin-top: 50px;
+    padding: 2rem;
+    border-radius: 7px;
+    position: relative;
+    color: white;
+    transition: .5s;
+}
+.lk:hover{
+    top: -5px;
+    background: #ff7f50;
+}
+.lk:active{
+    background: #f7a587;
+}
+.lst{
+    margin-top: 30px;
+}
+p{
+    color: rgb(185, 184, 184);
+}
+a{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    margin-top: 10rem;
+}
+
+
+
+@media (max-width: 767px) {
+    #head {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+    }
+
+    .logo {
+        justify-self: center;
+        margin-bottom: 20px;
+    }
+}
+ 
